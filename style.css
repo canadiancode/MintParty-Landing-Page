@@ -1,282 +1,220 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .linkTreeContainer {
-    margin: 0 auto;
-    height: 100%;
-    width: 100vw;
-    padding: 5em 5em 5em 5em;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(23,23,23,1) 35%);
-    overflow: hidden;
-  }
-  
-  h1, h3, p {
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-    z-index: 5;
-  }
-  
-  h1 {
-    font-size: 5em;
-    text-shadow: 2px 2px 8px black;
-  }
-  
-  .pccText {
-    text-shadow: 2px 2px 8px darkred;
-  }
-  
-  h3 {
-    font-size: 2em;
-    text-shadow: 2px 2px 8px darkred;
-  }
-  
-  .LearnToEarn {
-    text-shadow: 2px 2px 8px darkred;
-  }
-  
-  .buttonContainer {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    max-width: 25em;
-    height: 75vh;
-    text-align: center;
-    justify-content: center;
-    z-index: 5;
-  }
-  
-  .linkButton {
-    margin-top: 2em;
-    padding: 1em 5em;
-    background-color: darkred;
-    cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    box-shadow: 0px 10px 13px -7px #000000,
-    5px 5px 15px 5px rgb(0 0 0 / 0%);
-    transition: 0.5s ease-out;
-    display: flex;
-    justify-content: space-between;
-    z-index: 5;
-    width: 100%;
-    color: white;
-    font-weight: bolder;
-    font-family: "Anonymous Pro", sans-serif;
-    text-align: left;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    font-family: "Anonymous Pro", sans-serif;
-    text-align: left;
-    width: 100%;
-    z-index: 5;
-  }
-  
-  .gradHatDiv {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    height: 5em;
-    margin-top: 3em;
-    z-index: 1;
-  }
-  
-  .linkButton:hover {
-    transform: translate(0.10em, -0.10em);
-    box-shadow: 0px 12px 20px -5px #280000, 5px 5px 15px 5px #280000;
-    padding-right: 4em;
-  }
-  
-  .rightArrow {
-    margin-right: 0em;
-  }
-  
-  .astronautDiv {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0em;
-    left: 0;
-    padding-top: 10em;
-  }
-  
-  .astronaut {
-    height: 22em;
-    position: absolute;
-    left: 0;
-    z-index: 2;
-    overflow: hidden;
-  }
-  
-  #astronaut {
-    animation: astronaut 5s infinite ease; 
-  }
-  
-  .spaceStationDiv {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0em;
-    right: 0; 
-  }
-  
-  .spaceStation {
-    height: 16em;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    overflow: hidden;
-    padding-right: 5em;
-    animation: spaceStation 7s infinite linear;
-  }
-  
-  .gradHatImage {
-    height: 5em;
-    text-align: center;
-    z-index: 1;
-    width: 10em;
-  }
-  
-  .PerformanteImg {
-    height: 6em;
-  }
-  
-  .shootingStarDiv {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    z-index: 3;
-    
-  }
-  
-  .shootingStar {
-    position: absolute;
-    height: 3em;
-    margin: 0;
-    padding: 0;
-     z-index: 3;
-  } 
-  
-  
-  @media only screen and (max-width: 1250px) {
-    
-  .spaceStation {
-    padding-right: 1em;
-  }
-  
-  }
-  
-  
-  @media only screen and (max-width: 950px) {
-    
-  h1 {
-    font-size: 3em;
-  }
-  
-  h3 {
-    font-size: 1.2em;
-  }
-  
-  .astronaut {
-    margin-left: -10em;
-  }
-  
-  .spaceStation {
-    margin-right: -2em;
-  }
-  
-  }
-  
-  @media only screen and (max-width: 650px) {
-    
-  .astronaut {
-    margin-left: -12em;  
-  }
-  
-  .spaceStation {
-    margin-right: -4em;
-  }
-  
-  }
-  
-  @media only screen and (max-width: 350px) {
-    
-   .linkTreeContainer {
-      padding: 2em;
-    }
-  }
-    
-    #astronaut {
-      transform: translateY(0px);
-    }  
-  
-  @keyframes astronaut {
-  
-    0%    { transform: translateY(0px); }
-    50%   { transform: translateY(50px); }
-    100%  { transform: translateY(0px); }
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    #spaceStation {
-      transform: rotateZ(0deg);
-    }
-    
-    @keyframes spaceStation {
+.header-wrapper {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+.linkTreeContainer {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  padding: 5em 5em 5em 5em;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(23,23,23,1) 35%);
+  overflow: hidden;
+}
+
+h1, h3, p {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+h1 {
+  font-size: 5em;
+  text-shadow: 2px 2px 8px black;
+  font-family: Prompt, sans-serif;
+}
+
+.pccText {
+  text-shadow: 2px 2px 8px darkred;
+}
+
+h3 {
+  font-size: 2em;
+  text-shadow: 2px 2px 8px darkred;
+  font-family: Prompt, sans-serif;
+}
+
+.LearnToEarn {
+  text-shadow: 2px 2px 8px darkred;
+}
+
+p {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 25em;
+  height: 90vh;
+  text-align: center;
+  justify-content: center;
+  z-index: 5;
+  margin-top: 4em;
+}
+
+.linkButton {
+  margin-top: 2em;
+  padding: 1em 5em;
+  background-color: darkred;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 10px 13px -7px #000000,
+  5px 5px 15px 5px rgb(0 0 0 / 0%);
+  transition: 0.5s ease-out;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+  width: 100%;
+  color: white;
+  font-weight: bolder;
+  font-family: "Anonymous Pro", sans-serif;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-family: "Anonymous Pro", sans-serif;
+  text-align: left;
+  width: 100%;
+  z-index: 5;
+}
+
+.gradHatDiv {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 5em;
+  margin-top: 3em;
+  z-index: 1;
+}
+
+.linkButton:hover {
+  transform: translate(0.10em, -0.10em);
+  box-shadow: 0px 12px 20px -5px #280000, 5px 5px 15px 5px #280000;
+  padding-right: 4em;
+}
+
+.rightArrow {
+  margin-right: 0em;
+}
+
+.astronautDiv {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0em;
+  left: 0;
+  padding-top: 10em;
+}
+
+.astronaut {
+  height: 22em;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#astronaut {
+  animation: astronaut 5s infinite ease; 
+}
+
+.spaceStationDiv {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0em;
+  right: 0; 
+}
+
+.spaceStation {
+  height: 16em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  padding-right: 5em;
+  animation: spaceStation 7s infinite linear;
+}
+
+.gradHatImage {
+  height: 5em;
+  text-align: center;
+  z-index: 1;
+  width: 10em;
+}
+
+.PerformanteImg {
+  height: 6em;
+}
+
+
+@media only screen and (max-width: 1250px) {
   
-    0%    { transform: rotateZ(0deg); }
-    50%   { transform: rotateZ(6deg); }
-    100%  { transform: rotateZ(0deg); }
+.spaceStation {
+  padding-right: 1em;
+}
+
+}
+
+
+@media only screen and (max-width: 950px) {
+  
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.astronaut {
+  margin-left: -10em;
+}
+
+.spaceStation {
+  margin-right: -2em;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+  
+.astronaut {
+  margin-left: -12em;  
+}
+
+.spaceStation {
+  margin-right: -4em;
+}
+
+}
+
+@media only screen and (max-width: 350px) {
+  
+ .linkTreeContainer {
+    padding: 2em;
   }
-    
-    .star1 {
-      animation: star1 15s linear infinite;
-      top: 0;
-      left: 0;
-    }  
-  
-  @keyframes star1 {
-  
-    0%    { 
-      transform:translate(-1em, -1em) rotate(-2eg);
-    }
-    
-    
-    100%    { 
-      transform:translate(190em, 50em) rotate(-2deg);
-    }
-  }
-    
-    .star3 {
-      animation: star3 25s linear infinite;
-      bottom: 0;
-      left: 0;
-    }  
-  
-  @keyframes star3 {
-  
-    0%    { 
-      transform:translate(-50em, -20em) rotate(-22deg);
-    }
-    
-    
-    100%    { 
-      transform:translate(190em, -30em) rotate(-22deg);
-    }
-  }
+}
